@@ -9,10 +9,19 @@
 /* Begin PBXBuildFile section */
 		001694D71AAF88B8004452FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001694D61AAF88B8004452FE /* AppDelegate.swift */; };
 		001694D91AAF88B8004452FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001694D81AAF88B8004452FE /* ViewController.swift */; };
-		001694DC1AAF88B8004452FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001694DA1AAF88B8004452FE /* Main.storyboard */; };
 		001694DE1AAF88B8004452FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001694DD1AAF88B8004452FE /* Images.xcassets */; };
 		001694E11AAF88B8004452FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001694DF1AAF88B8004452FE /* LaunchScreen.xib */; };
 		001694ED1AAF88B8004452FE /* WordMatcher3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001694EC1AAF88B8004452FE /* WordMatcher3Tests.swift */; };
+		001694F71AAF88D6004452FE /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001694F61AAF88D6004452FE /* ResultsViewController.swift */; };
+		001694FD1AAF89BC004452FE /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001694FC1AAF89BC004452FE /* CoreDataStack.swift */; };
+		001694FF1AAF89C8004452FE /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001694FE1AAF89C8004452FE /* Entity.swift */; };
+		001695031AAF89D7004452FE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001695021AAF89D7004452FE /* TableViewCell.swift */; };
+		0016950B1AAF8B39004452FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0016950A1AAF8B39004452FE /* Main.storyboard */; };
+		0016950E1AAF9059004452FE /* WordModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0016950C1AAF9059004452FE /* WordModel.xcdatamodeld */; };
+		001695101AAF9631004452FE /* WordMatcher.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0016950F1AAF9631004452FE /* WordMatcher.sqlite */; };
+		001695121AAF9706004452FE /* WordMatcher-shm.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 001695111AAF9706004452FE /* WordMatcher-shm.sqlite */; };
+		001695141AAF971B004452FE /* WordMatcher-wal.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 001695131AAF971B004452FE /* WordMatcher-wal.sqlite */; };
+		001695161AB08838004452FE /* listOfWords.txt in Resources */ = {isa = PBXBuildFile; fileRef = 001695151AB08838004452FE /* listOfWords.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +39,21 @@
 		001694D51AAF88B8004452FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		001694D61AAF88B8004452FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		001694D81AAF88B8004452FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		001694DB1AAF88B8004452FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		001694DD1AAF88B8004452FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		001694E01AAF88B8004452FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		001694E61AAF88B8004452FE /* WordMatcher3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordMatcher3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		001694EB1AAF88B8004452FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		001694EC1AAF88B8004452FE /* WordMatcher3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordMatcher3Tests.swift; sourceTree = "<group>"; };
+		001694F61AAF88D6004452FE /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		001694FC1AAF89BC004452FE /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		001694FE1AAF89C8004452FE /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		001695021AAF89D7004452FE /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		0016950A1AAF8B39004452FE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0016950D1AAF9059004452FE /* WordModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordModel.xcdatamodel; sourceTree = "<group>"; };
+		0016950F1AAF9631004452FE /* WordMatcher.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = WordMatcher.sqlite; sourceTree = "<group>"; };
+		001695111AAF9706004452FE /* WordMatcher-shm.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WordMatcher-shm.sqlite"; sourceTree = "<group>"; };
+		001695131AAF971B004452FE /* WordMatcher-wal.sqlite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "WordMatcher-wal.sqlite"; sourceTree = "<group>"; };
+		001695151AB08838004452FE /* listOfWords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = listOfWords.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +97,12 @@
 			children = (
 				001694D61AAF88B8004452FE /* AppDelegate.swift */,
 				001694D81AAF88B8004452FE /* ViewController.swift */,
-				001694DA1AAF88B8004452FE /* Main.storyboard */,
+				001695021AAF89D7004452FE /* TableViewCell.swift */,
+				001694F61AAF88D6004452FE /* ResultsViewController.swift */,
+				0016950C1AAF9059004452FE /* WordModel.xcdatamodeld */,
+				001694FE1AAF89C8004452FE /* Entity.swift */,
+				001694FC1AAF89BC004452FE /* CoreDataStack.swift */,
+				0016950A1AAF8B39004452FE /* Main.storyboard */,
 				001694DD1AAF88B8004452FE /* Images.xcassets */,
 				001694DF1AAF88B8004452FE /* LaunchScreen.xib */,
 				001694D41AAF88B8004452FE /* Supporting Files */,
@@ -90,6 +113,10 @@
 		001694D41AAF88B8004452FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0016950F1AAF9631004452FE /* WordMatcher.sqlite */,
+				001695111AAF9706004452FE /* WordMatcher-shm.sqlite */,
+				001695151AB08838004452FE /* listOfWords.txt */,
+				001695131AAF971B004452FE /* WordMatcher-wal.sqlite */,
 				001694D51AAF88B8004452FE /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,9 +219,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				001694DC1AAF88B8004452FE /* Main.storyboard in Resources */,
+				001695141AAF971B004452FE /* WordMatcher-wal.sqlite in Resources */,
+				0016950B1AAF8B39004452FE /* Main.storyboard in Resources */,
 				001694E11AAF88B8004452FE /* LaunchScreen.xib in Resources */,
 				001694DE1AAF88B8004452FE /* Images.xcassets in Resources */,
+				001695161AB08838004452FE /* listOfWords.txt in Resources */,
+				001695121AAF9706004452FE /* WordMatcher-shm.sqlite in Resources */,
+				001695101AAF9631004452FE /* WordMatcher.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +244,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				001694D91AAF88B8004452FE /* ViewController.swift in Sources */,
+				001694FF1AAF89C8004452FE /* Entity.swift in Sources */,
+				0016950E1AAF9059004452FE /* WordModel.xcdatamodeld in Sources */,
 				001694D71AAF88B8004452FE /* AppDelegate.swift in Sources */,
+				001694F71AAF88D6004452FE /* ResultsViewController.swift in Sources */,
+				001695031AAF89D7004452FE /* TableViewCell.swift in Sources */,
+				001694FD1AAF89BC004452FE /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +272,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		001694DA1AAF88B8004452FE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				001694DB1AAF88B8004452FE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		001694DF1AAF88B8004452FE /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -407,6 +435,7 @@
 				001694F21AAF88B8004452FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		001694F31AAF88B8004452FE /* Build configuration list for PBXNativeTarget "WordMatcher3Tests" */ = {
 			isa = XCConfigurationList;
@@ -415,8 +444,22 @@
 				001694F51AAF88B8004452FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0016950C1AAF9059004452FE /* WordModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0016950D1AAF9059004452FE /* WordModel.xcdatamodel */,
+			);
+			currentVersion = 0016950D1AAF9059004452FE /* WordModel.xcdatamodel */;
+			path = WordModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 001694C91AAF88B8004452FE /* Project object */;
 }

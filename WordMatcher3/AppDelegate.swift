@@ -7,16 +7,71 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    lazy var coreDataStack = CoreDataStack()
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+
+        
+        
+        let navigationController = self.window!.rootViewController as UINavigationController
+        let viewController = navigationController.topViewController as ViewController
+        
+        
+       
+        let documentsURL = applicationDocumentsDirectory()
+        let storeURL = documentsURL.URLByAppendingPathComponent("WordMatcher")
+        
+        var manager = NSFileManager()
+        if !manager.fileExistsAtPath(storeURL.path!){
+            
+            //Grab File
+            var bundle = NSBundle.mainBundle()
+            var url = bundle.URLForResource("listOfWords", withExtension: "txt")
+            var myString = NSString(contentsOfURL: url!, encoding: NSUTF16StringEncoding , error: nil)
+            
+            var array = myString?.componentsSeparatedByString("\n") as [String]
+            
+            for word in array {
+                println("The \(word) was saved!")
+                let wordEntity = NSEntityDescription.entityForName("Entity", inManagedObjectContext: coreDataStack.context)
+                
+                let newWord = Entity(entity: wordEntity!, insertIntoManagedObjectContext: coreDataStack.context)
+                
+                newWord.theWord = word
+               
+                
+                coreDataStack.saveContext()
+                
+                println("\(word) was save!")
+                viewController.coreDataStack = coreDataStack
+            }
+            
+        } else {
+            println("The store is already present")
+            viewController.coreDataStack = coreDataStack
+        }
+
+     
         return true
+    }
+    
+    
+    func applicationDocumentsDirectory() -> NSURL {
+        let fileManager = NSFileManager.defaultManager()
+        
+        let urls = fileManager.URLsForDirectory(.DocumentDirectory,
+            inDomains: .UserDomainMask) as [NSURL]
+        
+        return urls[0]
     }
 
     func applicationWillResignActive(application: UIApplication) {
